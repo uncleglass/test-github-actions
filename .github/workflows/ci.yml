@@ -6,8 +6,12 @@ name: Java CI with Maven
 on:
   push:
     branches: [ master ]
+    paths:
+    - 'test/**'
   pull_request:
     branches: [ master ]
+    paths:
+    - 'test/**'
 
 defaults:
   run:
